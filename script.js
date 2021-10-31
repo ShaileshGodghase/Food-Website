@@ -4,6 +4,21 @@ function navigationBar() {
     const navlinks = document.querySelectorAll('.nav-links li');
     let orange_bg = document.querySelectorAll('.b');
 
+    let menuLinks = document.querySelectorAll('.menu-links');
+    menuLinks.forEach((l,index)=>{
+        l.addEventListener('click',()=>{
+            links.classList.toggle('nav-active');
+            navlinks.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                }
+                else {
+                    link.style.animation = `navbar 0.5s ease forwards ${index / 7 + 0.3}s`;
+                }
+            });
+            burger.classList.toggle('toggle');
+        })
+    })
     burger.addEventListener('click', () => {
         // nav toggle
         links.classList.toggle("nav-active");
