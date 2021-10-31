@@ -37,6 +37,9 @@ hr{
 }
 /* NAVIGATION BAR
 ********************************/
+.menu-links{
+    color: white;
+}
 nav{
     display:  flex;
     align-items: center;
@@ -879,7 +882,7 @@ footer{
         flex-direction: column;
         left: -768px;
         top: 10vh;
-        width: 100%;
+        width: 70%;
         height: 90vh;
         transition: transform 0.5s ease-out;
         align-items: center;
