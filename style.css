@@ -118,9 +118,6 @@ nav{
     margin: 5px;
     transition: all 0.3s ease;
 }
-.nav-active{
-    transform: translateX(768px);
-}
 /* MAIN-SECTION
 ******************************/
 .color-overlay{
@@ -864,6 +861,9 @@ footer{
     }
     /* NAVIGATION BAR
     ***************************/
+    .nav-active{
+        transform: translateX(768px);
+    }
     .logo h1{
         padding: 5px 0px 5px 30px;
     }
